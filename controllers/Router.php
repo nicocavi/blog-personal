@@ -19,6 +19,9 @@
 				case 'home':
 					$login_home->load_view('home');
 					break;
+				case 'sobre-mi':
+					$login_home->load_view('sobre-mi');
+					break;
 				default:
 					$login_home->load_view('post');
 					break;

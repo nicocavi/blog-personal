@@ -21,6 +21,7 @@
 					break;
 				case 'administration':
 					$login_home->load_view('administration');
+					break;
 				case 'sobre-mi':
 					$login_home->load_view('sobre-mi');
 					break;

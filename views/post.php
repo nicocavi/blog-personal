@@ -1,6 +1,6 @@
 <?php
 
-	$postController = new postController();
+	$postController = new PostController();
 	$post = $postController->search($_GET['r']);
 	if (empty($post)) {
 		$error = new ViewController();

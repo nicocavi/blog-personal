@@ -85,6 +85,7 @@ body{
 	width: 100%;
 	min-height: 500px;
 	padding-bottom: 100px;
+	align-items: flex-start;
 }
 
 #redes{
@@ -194,4 +195,45 @@ body{
 	font-size: 18px;
 	margin-top: 20px;
 	color: #222;
+}
+
+#admin{
+	display: flex;
+	justify-content: center;
+	max-width: 1920px;
+	width: 100%;
+}
+
+.sect-admin{
+	border: solid 1px #d0d0d0;
+	border-radius: 8px 8px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+	width: 30%;
+}
+
+.sect-admin header{
+	border-bottom: solid 1px #d0d0d0;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.sect-admin input{
+	margin: 10px 0 10px 0;
+}
+
+
+.sect-admin input[type="submit"]{
+	border: none;
+	color: #fff;
+	cursor:pointer;
+	font-weight: bold;
+	background: red;
+	border-radius: 3px;
+	padding: 10px 5px;
+	width: 30%;
 }

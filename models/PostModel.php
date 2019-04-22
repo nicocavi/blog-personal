@@ -39,8 +39,28 @@
 			return $data;
 		}
 
-		public function del($id_post = ''){
-			$this->query = "DELETE FROM post WHERE id_post = $id_post";
+		public function getTitulo($titulo = ''){
+
+
+			$this->query = ($titulo != '')
+			?"SELECT * FROM post WHERE titulo = '$titulo'"
+			:"SELECT (titulo) FROM post";
+
+			$this->get_query();
+
+			$num_rows = count($this->rows);
+
+			$data = array();
+
+			foreach ($this->rows as $key => $value) {
+				array_push($data, $value);
+			}
+			
+			return $data;	
+		}
+
+		public function del($titulo = ''){
+			$this->query = "DELETE FROM post WHERE titulo  = $titulo";
 			$this->set_query();
 		}
 

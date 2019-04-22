@@ -11,12 +11,16 @@
 			return $this->model->get($post_id);
 		}
 
+		public function getTitulo($titulo = ''){
+			return $this->model->getTitulo($titulo);
+		}
+
 		public function search($url = ''){
 			return $this->model->search($url);
 		}
 
-		public function del( $post_id = '' ){
-			return $this->model->del($post_id);			
+		public function del( $titulo = '' ){
+			return $this->model->del($titulo);			
 		}
 
 		public function set( $post_data = array() ){

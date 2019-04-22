@@ -19,6 +19,9 @@
 				case 'home':
 					$login_home->load_view('home');
 					break;
+				case 'administration':
+					$login_home->load_view('administration');
+					break;
 				default:
 					$login_home->load_view('post');
 					break;

@@ -1,12 +1,6 @@
 <?php
 
-	$postController = new PostController();
-	$post = $postController->search($_GET['r']);
-	if (empty($post)) {
-		$error = new ViewController();
-		$error->load_view('error404'); 
-	}else{
-		$templatePost = 
+$templatePost = 
 		'<!DOCTYPE html>
 		<html>
 		<head>
@@ -39,16 +33,23 @@
 					<article id="post">
 						<header>
 							<h1>
-								'.$post[0]['titulo'].'
+								Sobre Mí.
 							</h1>
 							<p>
-								'.$post[0]['subtitulo'].'
+								Me presento ante mis seguidores, soy Nicolas Cavilla, ciudadano de la ciudad de Chivilcoy, Buenos Aires, Argentina.
 							</p>
 						</header>		
-								'.$post[0]['cuerpo'].'
-					</article>
+							<p class="parrafo">
+								Ante todo me presento, soy Nicolas Cavilla actualmente estudiante de la Licenciatura en Sistemas de la Informacion de la Universidad Nacional de Lujan (UNLU) sede Chivilcoy.
+							</p>
+							<p class="parrafo">
+								Me considero una persona entusiasta en el mundo de la informatica y un novato en el mundo de la redaccion y comunicacion, asi que emprendo este nuevo viaje en busca de adentrarme en el inmenso mundo de la internet.
+							</p>	
+							<p class="parrafo">
+								
+							</p>
+					</article>L
 				</section>';
 		print($templatePost);	
-	}
 
-
+?>

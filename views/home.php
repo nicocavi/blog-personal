@@ -20,9 +20,9 @@ $template_post = '
 				<h1 style="margin-left: 20px; font-weight: normal;">Nicolas Cavilla</h1>
 				<nav>
 					<ul>
-						<li>Home</li>
+						<li><a href="/blog-personal">Home</a></li>
 						<li>Buscar</li>
-						<li>Sobre mí</li>
+						<li><a href="sobre-mi">Sobre mí</a></li>
 					</ul>
 				</nav>
 			</div>
